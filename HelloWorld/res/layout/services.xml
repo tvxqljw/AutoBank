@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/servicesPage"
+    style="@style/all"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/services_top"
+        style="@style/top"
+        >
+        
+        <Button 
+            android:layout_weight="1" 
+            style="@style/top_textview" 
+            android:gravity="left"
+            android:background="@drawable/icon_back"
+            android:onClick="backtologin"
+             />
+        
+        <TextView style="@style/v_line"/>
+        
+        <TextView
+             android:layout_weight="4" 
+             style="@style/top_textview" 
+             android:text="Services"  
+             android:gravity="center"
+             android:textSize="10dp"
+             android:layout_gravity="center"/>
+        
+        <TextView style="@style/v_line"/>
+        
+        <Button
+            style="@style/top_textview"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/icon_nav"
+            android:gravity="right" />
+        
+    </LinearLayout>
+    
+     <TextView android:id="@+id/topline" style="@style/h_line" android:layout_below="@id/services_top"/>
+     
+     <TextView 
+         android:id="@+id/h1"
+         style="@style/h1"
+         android:layout_below="@id/topline"
+         android:layout_marginTop="15dp"
+         android:text="Hi,lijingwen,great to see you."
+          />
+     
+     <TextView 
+         android:id="@+id/h2"
+         style="@style/h2"
+         android:layout_below="@id/h1"
+         android:text="It's my pleasure to help you .Now you can choose the servives you want."
+          />
+ 
+    
+    
+   <LinearLayout
+       android:id="@+id/services"
+       style="@style/services"
+       android:orientation="vertical" 
+       >
+       
+       <TextView style="@style/h_line"/>
+       
+       <LinearLayout
+           android:id="@+id/services_l1"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+
+           <LinearLayout android:id="@+id/deposit" style="@style/serviesChild" android:orientation="vertical">        
+              <Button style="@style/serviesButton" android:background="@drawable/icon_deposit" android:onClick="gotodeposit"/>
+              
+              <TextView style="@style/serviesText" android:text="Deposit"/>
+          </LinearLayout>
+
+           <TextView style="@style/v_line"/>
+           
+
+    <LinearLayout android:id="@+id/draw" style="@style/serviesChild" android:orientation="vertical">        
+              <Button style="@style/serviesButton" android:background="@drawable/icon_draw" android:onClick="gotodraw"/>
+              
+              <TextView style="@style/serviesText" android:text="Draw"/>
+          </LinearLayout>
+
+                           
+       </LinearLayout><!-- end services_l1 -->
+       
+       <TextView style="@style/h_line"/>
+       
+      <LinearLayout
+           android:id="@+id/services_l2"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           
+          <LinearLayout android:id="@+id/transfer" style="@style/serviesChild" android:orientation="vertical">        
+              <Button style="@style/serviesButton" android:background="@drawable/icon_transfer" android:onClick="gototransfer"/>
+              
+              <TextView style="@style/serviesText" android:text="Transfer"/>
+          </LinearLayout>
+          
+           
+               
+           <TextView style="@style/v_line"/>
+           
+
+            <LinearLayout android:id="@+id/detail" style="@style/serviesChild" android:orientation="vertical">        
+              <Button style="@style/serviesButton" android:background="@drawable/icon_detail" android:onClick="gotodetail"/>
+              
+              <TextView style="@style/serviesText" android:text="Deal Detail"/>
+          </LinearLayout>
+
+           
+       </LinearLayout><!-- end services_l2 -->
+       
+       
+       
+       <TextView style="@style/h_line"/>
+       
+        <LinearLayout
+           android:id="@+id/services_l3"
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           >
+           
+           <LinearLayout android:id="@+id/information" style="@style/serviesChild" android:orientation="vertical">        
+              <Button style="@style/serviesButton" android:background="@drawable/icon_information" android:onClick="gotoinformation"/>
+              
+              <TextView style="@style/serviesText" android:text="Personal Information"/>
+          </LinearLayout>
+           <TextView style="@style/v_line"/>
+           <LinearLayout android:id="@+id/resetpassword" style="@style/serviesChild" android:orientation="vertical">        
+              <Button style="@style/serviesButton" android:background="@drawable/icon_password" android:onClick="gotoresetpassword"/>
+              
+              <TextView style="@style/serviesText" android:text="ResetPassword"/>
+          </LinearLayout>
+           
+       </LinearLayout><!-- end services_l3 -->
+       
+   </LinearLayout><!-- end services -->
+
+   
+
+</RelativeLayout>

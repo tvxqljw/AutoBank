@@ -1,0 +1,16 @@
+ <!-- one cus --> 
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+            style="@style/cusplain"
+            >          
+            <RelativeLayout 
+                style="@style/cuscontent"
+                >                 
+                <TextView android:id="@+id/c_name" android:text="Name" style="@style/custv" android:layout_alignParentLeft="true"/>
+                <TextView android:id="@+id/c_cid" android:text="cid" style="@style/custv_small" android:layout_alignParentLeft="true" android:layout_below="@id/c_name"/>
+                <TextView android:id="@+id/c_state" style="@style/custv_state_ok" android:layout_alignBaseline="@+id/c_name"  android:layout_toRightOf="@+id/c_name" android:text="OK" />
+                <Button android:id="@+id/c_gotocus" style="@style/icon_goto" android:background="@drawable/icon_goto" android:onClick="gotoeachcus" android:focusable="false"/>
+                
+            </RelativeLayout>           
+        </LinearLayout><!--end  one cus -->

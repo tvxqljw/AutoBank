@@ -1,0 +1,48 @@
+<RelativeLayout 
+    android:id="@+id/index"
+    style="@style/all"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+    
+    
+    <RelativeLayout
+            android:id="@+id/logo"
+            style="@style/logo"      
+            >
+        <TextView 
+            android:id="@+id/logopic" 
+            style="@style/logopic"
+            android:text="Hi"
+          />
+        
+    </RelativeLayout>
+    
+    <!-- table  --><!-- end table -->
+
+    <LinearLayout
+        android:id="@+id/Table"
+        style="@style/table"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/gotoadminlogin"
+            style="@style/selectButton"
+            android:cursorVisible="true"
+            android:onClick="gotoadminlogin"
+            android:text="Admin" />
+
+        <Button
+            android:id="@+id/gotoaccountlogin"
+            style="@style/selectButton"
+            android:cursorVisible="true"
+            android:onClick="gotoaccountlogin"
+            android:text="Account" />
+    </LinearLayout>
+   
+</RelativeLayout>

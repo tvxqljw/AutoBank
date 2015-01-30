@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confirmPage"
+    style="@style/all"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+      
+     <RelativeLayout
+        style="@style/container"
+         >
+   
+        <ImageView
+            android:id="@+id/icon_confirm"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:background="@drawable/icon_confirm"
+            />
+        
+        <TextView
+            android:id="@+id/confirm_title"
+            style="@style/confirm_title"
+            android:layout_toRightOf="@id/icon_confirm"
+            android:layout_marginLeft="10dp"
+            android:text="Operate Successfully!"
+            />
+        
+        <TextView
+            android:id="@+id/confirm_content"
+            style="@style/confirm_content"
+            android:layout_below="@id/confirm_title"
+            android:layout_marginTop="20dp"
+            android:text="Confirm content!"
+            />
+        
+        <TextView
+            android:id="@+id/seconds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm_content"
+            android:textColor="@drawable/blue"
+            android:layout_marginTop="20dp"
+            android:text="This page will be closed in 5 seconds."
+            />
+     
+     <Button
+            android:id="@+id/confirmbutton"
+            style="@style/loginButton"
+            android:layout_marginTop="20dp"
+            android:text="Confirm"  
+            android:layout_below="@id/seconds"
+            android:onClick="backtoservices"
+            />
+         
+     </RelativeLayout>
+     
+     
+     
+ 
+    
+    
+  
+
+   
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/managecusPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add" >
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+         >
+         
+         <Button
+             android:id="@+id/exitaddcus"
+             style="@style/xButton"
+             android:layout_alignParentRight="true"
+             android:onClick="exitaddcus"
+             />
+         
+         <TextView 
+             android:id="@+id/addcush1" 
+             android:text="Add Customer" 
+             android:layout_width="wrap_content" 
+             android:layout_height="wrap_content" 
+             android:textColor="@drawable/gray" 
+             android:textSize="20dp" 
+             android:layout_below="@id/exitaddcus"
+             android:layout_centerHorizontal="true"/>
+         
+         <RelativeLayout
+             android:layout_below="@id/addcush1"
+             android:layout_marginLeft="50dp"
+             android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_centerHorizontal="true"
+             >
+             
+             <TextView
+                 android:id="@+id/addcus_identitytv" 
+                 android:text="Identity:"
+                 style="@style/addcus_tv"
+                 />
+             <EditText
+                  android:id="@+id/addcus_identityev"
+                  style="@style/addcus_ev"
+                  android:hint="insert the identity"
+                  android:layout_below="@id/addcus_identitytv"
+                 />
+             
+             <TextView
+                 android:id="@+id/addcus_nametv" 
+                 android:text="Name:"
+                 style="@style/addcus_tv"
+                 android:layout_below="@id/addcus_identityev"
+                 />
+             <EditText
+                  android:id="@+id/addcus_nameev"
+                  style="@style/addcus_ev"
+                  android:hint="insert the name"
+                  android:layout_below="@id/addcus_nametv"
+                 />
+             
+             <TextView
+                 android:id="@+id/addcus_teltv" 
+                 android:text="Tel:"
+                 style="@style/addcus_tv"
+                 android:layout_below="@id/addcus_nameev"
+                 />
+             <EditText
+                  android:id="@+id/addcus_telev"
+                  style="@style/addcus_ev"
+                  android:hint="insert the tel"
+                  android:layout_below="@id/addcus_teltv"
+                 />
+             
+             <TextView
+                 android:id="@+id/addcus_addrtv" 
+                 android:text="Address:"
+                 style="@style/addcus_tv"
+                 android:layout_below="@id/addcus_telev"
+                 />
+             <EditText
+                  android:id="@+id/addcus_addrev"
+                  style="@style/addcus_ev"
+                  android:hint="insert the address"
+                  android:layout_below="@id/addcus_addrtv"
+                 />
+             
+              <TextView
+                 android:id="@+id/addcus_careertv" 
+                 android:text="Career:"
+                 style="@style/addcus_tv"
+                 android:layout_below="@id/addcus_addrev"
+                 />
+             <EditText
+                  android:id="@+id/addcus_careerev"
+                  style="@style/addcus_ev"
+                  android:hint="insert the career"
+                  android:layout_below="@id/addcus_careertv"
+                 />
+             
+             <TextView
+                 android:id="@+id/addcus_sextv" 
+                 android:text="Gender:"
+                 style="@style/addcus_tv"
+                 android:layout_below="@id/addcus_careerev"
+                 />
+             
+             <RadioGroup
+                 android:id="@+id/addcus_sexgroup"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/addcus_sextv"
+                 android:layout_centerHorizontal="true"
+                 android:gravity="center"
+                 android:orientation="horizontal"
+                 >
+                   
+                     <RadioButton android:id="@+id/male" style="@style/sexradio" android:checked="true" android:text="Male"/>
+                     <RadioButton android:id="@+id/female" style="@style/sexradio" android:text="Female" android:layout_toRightOf="@id/male"/>
+                                 
+             </RadioGroup>
+             
+             <Button
+             android:id="@+id/confirmaddcus"
+             style="@style/addcus_confirmbutton"
+             android:text="Add"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="20dp"
+             android:layout_below="@id/addcus_sexgroup"
+             android:onClick="addcusSubmit"
+             />
+             
+         </RelativeLayout><!-- end add cus contnet -->
+         
+     </RelativeLayout>
+    
+</LinearLayout>

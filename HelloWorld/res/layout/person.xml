@@ -1,0 +1,250 @@
+<!--ll  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll"
+    style="@style/ll"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!-- 内容高度宽s度自适应，@drawable是属性  快捷键alt+? -->
+
+	<!--ll_inner_1 -->
+	<LinearLayout
+	    
+	    android:id="@+id/ll_inner_1"
+	    style="@style/ll_inner_h"
+	    >
+	    
+	    <!--ll_left-->
+	    <LinearLayout
+	    	android:id="@+id/ll_left"
+	   		style="@style/tv_style_left"
+	   		android:layout_weight="3"
+	    >
+	        
+	         <LinearLayout
+	             android:id="@+id/ll_left_one"
+	             style="@style/ll_left_v"
+	             >
+	             
+	             <TextView
+	                 android:text="Name"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	
+	             
+	             <TextView
+	                 android:text="Lijingwen"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	
+	             
+	             <TextView
+	                 android:text="Nation"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	
+	             
+	             <TextView
+	                 android:text="HAN"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             <TextView style="@style/tv_line"></TextView>
+	             
+	         </LinearLayout><!--end ll_left_one-->
+	         
+	         <TextView style="@style/ll_h_line"></TextView>
+	                         
+	         <LinearLayout
+	             android:id="@+id/ll_left_two"
+	             style="@style/ll_left_v"
+	             >
+	             <TextView
+	                 android:text="Gender"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	
+	             
+	             <TextView
+	                 android:text="female"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	
+	             
+	             <TextView
+	                 android:text="Local"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	
+	             
+	             <TextView
+	                 android:text="China"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	
+	             
+	         </LinearLayout><!--end ll_left_two-->
+	         
+	         <TextView style="@style/ll_h_line"></TextView>
+	             
+	         <LinearLayout
+	             android:id="@+id/ll_left_three"
+	             style="@style/ll_left_v"
+	             >
+	             
+	             <TextView
+	                 android:text="Age"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>
+	             
+	             <TextView
+	                 android:text="22"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	            	 <TextView style="@style/tv_line"></TextView>
+	             
+	             <TextView
+	                 android:text="Location"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>
+	             
+	             <TextView
+	                 android:text="HuBei"
+	                 style="@style/ll_left_v_textview"
+	                 ></TextView>
+	             
+	             	<TextView style="@style/tv_line"></TextView>	s
+	             
+	         </LinearLayout><!--end ll_left_three-->
+	        
+	    </LinearLayout> <!--end ll_left-->
+	
+	    <!--ll_right -->
+		<LinearLayout
+		   	android:id="@+id/ll_right"
+		  	style="@style/tv_style_right"
+		  	android:layout_weight="1"
+		  	android:background="@drawable/ll"
+		    >
+	         
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		  		android:background="@drawable/swk"
+		    ></LinearLayout>
+		   		    
+		</LinearLayout><!--end ll_right-->
+	    
+	    
+	</LinearLayout><!--end ll_inner_1 -->
+	
+	
+	<!-- ll_inner_2 -->
+	<LinearLayout
+	    
+	    android:id="@+id/ll_inner_2"
+	    style="@style/ll_inner_v"
+	    >
+	    
+	    <LinearLayout style="@style/ll_left_v"
+		    >
+	        
+	        <TextView android:text="Education" style="@style/textview"></TextView>
+	        
+	    </LinearLayout><!-- 1 -->
+	     <TextView style="@style/ll_h_line"></TextView>
+		    
+		    <LinearLayout style="@style/ll_left_v"
+		    >
+		        
+		        <TextView android:text="Graduate University" style="@style/textview" android:layout_weight="1"></TextView>
+		        <TextView style="@style/tv_line"></TextView>
+		        <TextView android:text="CCNU" style="@style/textview"  android:layout_weight="2"></TextView>
+		        
+		    </LinearLayout><!-- 2 -->
+		     <TextView style="@style/ll_h_line"></TextView>
+		    
+		    <LinearLayout style="@style/ll_left_v"
+		    >
+		        <TextView android:text="Degree" style="@style/textview" android:layout_weight="1"></TextView>
+		        <TextView style="@style/tv_line"></TextView>
+		        <TextView android:text="Reguler" style="@style/textview"  android:layout_weight="1"></TextView>
+		        <TextView style="@style/tv_line"></TextView>
+		        <TextView android:text="Major" style="@style/textview" android:layout_weight="1"></TextView>
+		        <TextView style="@style/tv_line"></TextView>
+		        <TextView android:text="CS" style="@style/textview"  android:layout_weight="1"></TextView>
+		        
+		    </LinearLayout><!-- 3 -->
+		     <TextView style="@style/ll_h_line"></TextView>
+		    
+		    <LinearLayout style="@style/ll_left_v"
+		    >
+		        <TextView android:text="Graduate Time" style="@style/textview" android:layout_weight="1"></TextView>
+		        <TextView style="@style/tv_line"></TextView>
+		        <TextView android:text="2015.07.01" style="@style/textview"  android:layout_weight="2"></TextView>
+		        
+		    </LinearLayout><!-- 4 -->
+		     
+	    
+	    
+	</LinearLayout><!--end ll_inner_2 -->
+
+
+	<!-- ll_inner_3 -->
+	<LinearLayout	    
+		    android:id="@+id/ll_inner_3"
+		    style="@style/ll_inner_v"
+		    >
+	    
+	    <LinearLayout style="@style/ll_left_v"><TextView android:text="Certificates" style="@style/textview"></TextView></LinearLayout>
+	    <TextView style="@style/ll_h_line"></TextView>
+	     <LinearLayout style="@style/ll_left_v">
+	         <TextView android:text="English" style="@style/textview" android:layout_weight="1"></TextView>
+	         <TextView style="@style/tv_line"></TextView>
+	         <TextView android:text="GET-4" style="@style/textview" android:layout_weight="1"></TextView>
+	         </LinearLayout>
+	         <TextView style="@style/ll_h_line"></TextView>
+	      <LinearLayout style="@style/ll_left_v">
+	          <TextView android:text="Computer" style="@style/textview" android:layout_weight="1"></TextView>
+	          <TextView style="@style/tv_line"></TextView>
+	          <TextView android:text="Network GET-3" style="@style/textview" android:layout_weight="1">
+	              
+	          </TextView></LinearLayout>
+	    
+	</LinearLayout><!--end ll_inner_3 -->
+		    
+		    
+    <!-- ll_inner_4 -->
+	<LinearLayout		    
+		    android:id="@+id/ll_inner_4"
+		    style="@style/ll_inner_v"
+		    >
+	    
+	    <LinearLayout style="@style/ll_left_v"><TextView android:text="Evaluation" style="@style/textview"></TextView></LinearLayout>
+	    <TextView style="@style/ll_h_line"></TextView>
+	    <LinearLayout style="@style/ll_left_v">
+	        <TextView 
+	            android:text="Actually,I am genius.I am genius.I am genius.I am genius.I am genius.I am genius.I am genius.I am genius.I am genius.I am genius.I am genius." 
+	            style="@style/textview"
+	            ></TextView>	        
+	     </LinearLayout>
+	    
+	</LinearLayout><!--end ll_inner_4 -->
+		    
+	
+	
+	
+</LinearLayout><!--end ll  -->

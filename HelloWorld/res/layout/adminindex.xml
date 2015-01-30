@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/adminindexPage"
+    style="@style/all"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/services_top"
+        style="@style/top"
+        >
+        
+        <Button 
+            android:layout_weight="1" 
+            style="@style/top_textview" 
+            android:gravity="left"
+            android:background="@drawable/icon_back"
+            android:onClick="backtologin"
+             />
+        
+        <TextView style="@style/v_line"/>
+        
+        <TextView
+             android:layout_weight="4" 
+             style="@style/top_textview" 
+             android:id="@+id/adminindex_top"
+             android:text="admin"  
+             android:gravity="center"
+             android:textSize="15dp"
+             android:layout_gravity="center"/>
+        
+        <TextView style="@style/v_line"/>
+        
+        <Button
+            style="@style/top_textview"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/icon_refresh"
+            android:onClick="refresh"
+            android:gravity="right" />
+        
+    </LinearLayout>
+    
+     <TextView android:id="@+id/topline" style="@style/h_line" android:layout_below="@id/services_top"/>
+
+        <TabHost android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/tabHost"
+        android:layout_below="@id/topline"
+        >
+        <TabWidget
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/tabs"
+        android:background="@null"
+        style="@style/tab"
+        />
+         <FrameLayout
+         android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@android:id/tabcontent"
+        android:layout_marginTop="55dp"     
+         >        
+           
+                       
+         </FrameLayout>
+        
+        </TabHost>
+    </RelativeLayout>

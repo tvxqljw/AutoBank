@@ -1,0 +1,30 @@
+ <!-- one detail --> 
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+            style="@style/detailplain"
+            >          
+            <RelativeLayout 
+                style="@style/detailcontent"
+                > 
+                
+                <TextView android:id="@+id/d_datetv" android:text="Date" style="@style/detailtv" android:layout_alignParentLeft="true"/>
+                <TextView android:id="@+id/d_date" style="@style/detailtv_t" android:text="yyyymmddhhmmss" android:layout_toRightOf="@id/d_datetv" android:layout_marginLeft="5dp"/>
+               
+                
+                <TextView  android:id="@+id/d_line_1" style="@style/h_line" android:layout_below="@id/d_date"/>"
+                
+                <TextView android:id="@+id/d_money" style="@style/detailtv_money" android:layout_centerVertical="true" android:text="-150.0" />
+                <TextView android:id="@+id/d_type" android:text="TransOut" style="@style/detailtv_t" android:layout_alignParentRight="true" android:layout_below="@id/d_line_1"/> 
+                <TextView android:id="@+id/d_banlance" android:text="10000.00" style="@style/detailtv_t" android:layout_alignParentRight="true" android:layout_below="@id/d_type"/>  
+                <TextView android:id="@+id/d_banlancetv" android:text="Balance:" style="@style/detailtv" android:layout_toLeftOf="@id/d_banlance" android:layout_below="@id/d_type" android:layout_marginRight="5dp"/>  
+                
+                <TextView  android:id="@+id/d_line_2" style="@style/h_line" android:layout_below="@id/d_banlance"/>
+                
+                <TextView android:id="@+id/d_dcounttv" android:text="Opposite account id:" style="@style/detailtv" android:layout_alignParentLeft="true" android:layout_below="@id/d_line_2"/>
+                <TextView android:id="@+id/d_dcount" style="@style/detailtv_t" android:text="4200043130-201501113553323" android:layout_toRightOf="@id/d_dcounttv" android:layout_marginLeft="5dp" android:layout_below="@id/d_line_2"/>
+
+                
+                              
+            </RelativeLayout>           
+        </LinearLayout><!--end  one detail -->

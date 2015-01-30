@@ -1,0 +1,66 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/manageaccPage"
+    style="@style/all"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+         
+    
+    <LinearLayout
+        android:orientation="vertical"
+         android:layout_marginTop="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        >
+        
+        <!-- search -->
+        <RelativeLayout              
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >     
+
+        <EditText
+            android:id="@+id/accsearchev"
+            style="@style/search"
+            android:layout_alignParentLeft="true"
+            android:hint="insert account id ..." />
+
+        <Button
+            android:id="@+id/accsearchSubmit"
+            style="@style/searchButton"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:onClick="accsearchSubmit" 
+            />
+        
+       </RelativeLayout><!-- end search -->
+    
+    <!-- all acc -->
+     <ListView
+         android:id="@+id/acc_lv"
+         android:descendantFocusability="blocksDescendants"
+         android:orientation="vertical"
+         android:layout_marginTop="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         >
+        
+        
+
+        
+         
+    </ListView><!--end  all acc -->
+        
+    </LinearLayout><!-- end only child -->
+    
+    
+     
+     
+    
+</LinearLayout>

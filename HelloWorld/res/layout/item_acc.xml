@@ -1,0 +1,16 @@
+<!-- one acc --> 
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+    		xmlns:tools="http://schemas.android.com/tools"
+            style="@style/accplain"
+            >          
+            <RelativeLayout 
+                style="@style/acccontent"
+                >                 
+                <TextView android:id="@+id/a_aid" android:text="aid" style="@style/custv" android:layout_alignParentLeft="true"/>
+                <TextView android:id="@+id/a_name" android:text="name" style="@style/custv_small" android:layout_alignParentLeft="true" android:layout_below="@id/a_aid"/>
+                <TextView android:id="@+id/a_state" style="@style/acctv_state_normal" android:layout_alignBaseline="@+id/a_aid"  android:layout_toRightOf="@+id/a_aid" android:text="normal" />
+               <Button android:id="@+id/a_gotoacc" style="@style/icon_goto" android:background="@drawable/icon_goto" android:focusable="false"/>
+                <TextView android:id="@+id/a_balance" style="@style/custv_small" android:layout_toLeftOf="@id/a_gotoacc" android:layout_centerVertical="true" android:text="1000.0" android:layout_marginRight="20dp"/>
+            </RelativeLayout>           
+        </LinearLayout><!--end  one acc -->

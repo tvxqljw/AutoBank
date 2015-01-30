@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ccnu.helloworld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ccnu.helloworld.openActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity android:name="com.ccnu.helloworld.MainActivity"/>
+        <!--click events  -->
+        <activity android:name="com.ccnu.helloworld.RelativeActivity"/>
+        <activity android:name="com.ccnu.helloworld.gotoadminloginActivity"/>
+        <activity android:name="com.ccnu.helloworld.gotoaccountloginActivity"/>
+        <activity android:name="com.ccnu.helloworld.adminloginActivity"/>
+        <activity android:name="com.ccnu.helloworld.accountloginActivity"/>
+         <!-- services -->
+         <activity android:name="com.ccnu.helloworld.gotodepositActivity"/>
+         <activity android:name="com.ccnu.helloworld.gotodrawActivity"/>
+         <activity android:name="com.ccnu.helloworld.gototransferActivity"/>
+         <activity android:name="com.ccnu.helloworld.gotoinformationActivity"/>
+         <activity android:name="com.ccnu.helloworld.gotodetailActivity"/>
+         <activity android:name="com.ccnu.helloworld.gotoresetpasswordActivity"/>
+         <!-- add admin -->
+         <activity android:name="com.ccnu.helloworld.gotoaddcusActivity"/>
+         <!-- others -->
+          <activity android:name="com.ccnu.helloworld.eachcusActivity"/>
+           <activity android:name="com.ccnu.helloworld.gotoconfirmActivity"/>
+            <activity android:name="com.ccnu.helloworld.gotocusaccountsActivity"/>
+        
+    </application>
+
+</manifest>

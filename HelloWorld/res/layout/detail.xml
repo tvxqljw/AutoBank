@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailPage"
+    style="@style/all"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/services_top"
+        style="@style/top"
+        >
+        
+        <Button 
+            android:layout_weight="1" 
+            style="@style/top_textview" 
+            android:gravity="left"
+            android:background="@drawable/icon_back"
+            android:onClick="backtoservices"
+             />
+        
+        <TextView style="@style/v_line"/>
+        
+        
+        
+        <TextView
+             android:layout_weight="4" 
+             style="@style/top_textview" 
+             android:id="@+id/top_detail"
+             android:text="孙悟空 \n(4200043130-201501113553323)"  
+             android:gravity="center"
+             android:layout_gravity="center"/>
+        
+        <TextView style="@style/v_line"/>
+        
+        <Button
+            style="@style/top_textview"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/icon_nav"
+            android:gravity="right" />
+        
+    </LinearLayout>
+    
+     <TextView android:id="@+id/topline" style="@style/h_line" android:layout_below="@id/services_top"/>
+      
+     <RelativeLayout
+         android:id="@+id/detailsearch"
+         android:layout_below="@id/topline"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:paddingLeft="5dp"
+         android:paddingRight="5dp"
+         
+         >
+        
+          <TextView
+             android:id="@+id/st_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/st_ev"
+             android:layout_alignBottom="@+id/st_ev"
+             android:layout_alignLeft="@+id/et_tv"
+             android:text="Start:"
+             android:textColor="#fff" />
+         
+         <EditText
+             android:id="@+id/st_ev"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/st_tv"
+             android:padding="2dp"
+             android:background="@null"
+             android:textColor="@drawable/lightgray"
+             android:layout_marginLeft="10dp"
+             />
+         
+          <TextView android:id="@+id/w_1" style="@style/whiteline" android:layout_below="@id/st_ev"/>
+          
+          
+          <TextView
+             android:id="@+id/et_tv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/ed_ev"
+             android:layout_alignBottom="@+id/ed_ev"
+             android:layout_alignLeft="@+id/detailsearchsubmit"
+             android:text="End:"
+             android:textColor="#fff" />
+          
+         <EditText
+             android:id="@+id/ed_ev"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/st_ev"
+             android:padding="2dp"
+             android:layout_toRightOf="@id/et_tv"
+             android:background="@null"
+             android:textColor="@drawable/lightgray"
+             android:layout_marginLeft="15dp"
+             />
+         
+         <TextView style="@style/whiteline" android:id="@+id/w_2" android:layout_below="@id/ed_ev"/>
+         
+         <Button
+             android:id="@+id/detailsearchsubmit"
+              android:layout_width="match_parent"
+             android:layout_height="30dp"
+             android:text="Search"
+             android:onClick="detailsearchSubmit"
+             android:layout_below="@id/w_2"
+             android:background="@drawable/blue"
+             android:textColor="#fff"
+             android:layout_marginTop="5dp"
+             android:padding="0dp"
+             />
+
+         
+
+        
+         
+     </RelativeLayout>
+     
+     
+     
+     <LinearLayout
+         android:id="@+id/detailsv"
+         android:orientation="vertical"
+         android:layout_marginTop="15dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/detailsearch"
+         >
+         
+         
+         <ListView
+             android:id="@+id/detail_lv"
+             android:divider="@null"
+         	 android:descendantFocusability="blocksDescendants"
+         	 android:dividerHeight="10dp"
+	         android:orientation="vertical"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+         >
+         
+      
+     </ListView>
+ 
+         
+     </LinearLayout>
+     
+     
+     
+     
+    
+
+</RelativeLayout>

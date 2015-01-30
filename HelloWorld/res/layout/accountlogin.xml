@@ -1,0 +1,97 @@
+<RelativeLayout 
+    android:id="@+id/accountloginPage"
+    style="@style/all"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    >
+    
+    
+     <Button
+       android:id="@+id/backtohome"
+       android:layout_width="50px"
+       android:layout_height="50px"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/icon_backtohome"
+       android:onClick="backtohome"
+       />
+
+    <RelativeLayout
+            android:id="@+id/logo"
+            style="@style/logo"      
+            >
+        <TextView 
+            android:id="@+id/logopic" 
+            style="@style/logopic"
+            android:text="Account"
+          />
+        
+    </RelativeLayout>
+    
+    
+    <!-- table  -->
+    <RelativeLayout
+        android:id="@+id/Table"
+        style="@style/table"
+        android:gravity="center_vertical" >
+
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iconpeople"
+            android:background="@drawable/icon_people"
+            android:layout_alignParentLeft="true"
+             />
+        
+        <EditText
+            android:id="@+id/accountId"
+            style="@style/input"
+            android:layout_toRightOf="@id/iconpeople"
+            android:hint="Username"/>
+          
+
+        <TextView
+            android:id="@+id/whiteline1"
+            style="@style/whiteline"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/accountId" />
+        
+        
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iconpassword"
+            android:background="@drawable/icon_password"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/whiteline1"
+             />
+        
+        <EditText
+             android:id="@+id/accountpassword"
+             style="@style/input"
+             android:layout_below="@+id/whiteline1"
+             android:layout_toRightOf="@id/iconpassword"
+             android:inputType="textPassword"
+             android:hint="Password" />
+   
+        <TextView
+            android:id="@+id/whiteline2"
+            style="@style/whiteline"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/accountpassword" />
+        
+        <Button
+            android:id="@+id/accountloginButton"
+            style="@style/loginButton"
+            android:layout_below="@+id/whiteline2"
+            android:layout_marginTop="20dp"
+            android:text="Login"
+            android:onClick="accountlogin"
+            />
+        
+    </RelativeLayout><!-- end table -->
+   
+</RelativeLayout>

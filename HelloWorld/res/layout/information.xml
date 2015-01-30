@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/infomationPage"
+    style="@style/all"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:id="@+id/services_top"
+        style="@style/top"
+        >
+        
+        <Button 
+            android:layout_weight="1" 
+            style="@style/top_textview" 
+            android:gravity="left"
+            android:background="@drawable/icon_back"
+            android:onClick="backtoservices"
+             />
+        
+        <TextView style="@style/v_line"/>
+        
+        <TextView
+             android:layout_weight="4" 
+             style="@style/top_textview" 
+             android:text="Information"  
+             android:gravity="center"
+             android:textSize="15dp"
+             android:layout_gravity="center"/>
+        
+        <TextView style="@style/v_line"/>
+        
+        <Button
+            style="@style/top_textview"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/icon_nav"
+            android:gravity="right" />
+        
+    </LinearLayout>
+    
+     <TextView android:id="@+id/topline" style="@style/h_line" android:layout_below="@id/services_top"/>
+      
+     
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_marginTop="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/topline"
+         >
+         
+         <LinearLayout style="@style/plain">
+             <TextView style="@style/plaintv_l"  android:text="Name" />
+             <TextView style="@style/plaintv_r" android:id="@+id/information_name" android:text="Lijingwen" />            
+         </LinearLayout><!-- 1 -->
+         
+         <TextView style="@style/h_line"/>
+         
+         <LinearLayout style="@style/plain">
+             <TextView style="@style/plaintv_l"  android:text="Account Id" />
+             <TextView style="@style/plaintv_r" android:id="@+id/information_aid" android:text="4200000000" />            
+         </LinearLayout><!-- 2 -->
+         
+         <TextView style="@style/h_line"/>
+         
+         <LinearLayout style="@style/plain">
+             <TextView style="@style/plaintv_l"  android:text="State" />
+             <TextView style="@style/plaintv_r"  android:id="@+id/information_state" android:text="normal" />            
+         </LinearLayout><!-- 2 -->
+         
+         <TextView style="@style/h_line"/>
+         
+         <LinearLayout style="@style/plain">
+             <TextView style="@style/plaintv_l"  android:text="Balance" />
+             <TextView style="@style/plaintv_r"  android:id="@+id/information_balance" android:text="100.0" />            
+         </LinearLayout><!-- 2 -->
+         
+         <TextView style="@style/h_line"/>
+         
+     </LinearLayout>
+ 
+     
+     
+    
+
+</RelativeLayout>
